@@ -7,10 +7,8 @@ function ConvertHandler() {
       result = 1;
     }else{
       const filteredString = numString.match(/^(\d+(\.\d)?|\d*(\.\d)?)(\/(\d+(\.\d)?|\d*(\.\d)?))?$/);
-      console.log(filteredString);
       if(filteredString){
         const numArray = filteredString[0].split('/');
-        console.log(numArray);
         if(numArray.length === 2){
           const numerator = numArray[0];
           const denominator = numArray[1];
